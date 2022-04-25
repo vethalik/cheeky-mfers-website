@@ -1,0 +1,8 @@
+/node_modules
+.idea
+.next
+.env.local
+
+index.html
+out
+sample.json
