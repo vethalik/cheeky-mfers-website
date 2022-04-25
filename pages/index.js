@@ -32,6 +32,10 @@ const StyledContainer = styled(Container)(({ theme }) => ({
   paddingBottom: theme.spacing(8)
 }))
 
+const StyledGrid = styled(Grid)(({ theme }) => ({
+  marginBottom: theme.spacing(10)
+}))
+
 
 const SideMfer = ({ position = 1 }) => (
   <Box
@@ -168,7 +172,7 @@ const HomePage = () => {
           </Grid>
         </Grid>
 
-        <Grid container alignItems="center" justifyContent="center">
+        <StyledGrid container alignItems="center" justifyContent="center">
           <Grid item>
             <StyledTitle variant="h2">
               ABOUT
@@ -179,9 +183,9 @@ const HomePage = () => {
               Cheeky Mfers is a 10k generative art project built by Vethalik and 512, inspired by Sartoshi and in the public domain (cc0). Feel free to use these mfers the way you want.
             </StyledTypography>
           </Grid>
-        </Grid>
+        </StyledGrid>
 
-        <Grid container alignItems="center" justifyContent="center" direction="column">
+        <StyledGrid container alignItems="center" justifyContent="center" direction="column">
           <Grid item>
             <StyledTitle variant="h2">
               THE TEAM
@@ -197,7 +201,7 @@ const HomePage = () => {
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </StyledGrid>
 
         <Grid container alignItems="center" justifyContent="center" direction="column">
           <Grid item>
