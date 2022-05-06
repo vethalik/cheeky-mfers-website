@@ -1,0 +1,64 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add --exact --cwd C:\Users\User\Documents\Crypto\website_cheeky_mfers --dev eslint eslint-config-next
+
+PATH: 
+  C:\Users\User\Documents\Crypto\website_cheeky_mfers\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\User\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\.dotnet\tools;C:\Program Files (x86)\Sophos\Sophos SSL VPN Client\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\User\Documents\Crypto\website_cheeky_mfers\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "cheeky_mfers",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "export": "next export",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/vethalik/cheeky-mfers-website.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/vethalik/cheeky-mfers-website/issues"
+    },
+    "homepage": "https://github.com/vethalik/cheeky-mfers-website#readme",
+    "devDependencies": {
+      "@emotion/react": "^11.7.1",
+      "@emotion/styled": "^11.6.0",
+      "@mui/icons-material": "^5.3.0",
+      "@mui/lab": "^5.0.0-alpha.68",
+      "@mui/material": "^5.3.0",
+      "dat.gui": "^0.7.9",
+      "jwt-decode": "^3.1.2",
+      "next": "^12.0.10",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    },
+    "dependencies": {
+      "three": "^0.137.5",
+      "web3": "^1.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
