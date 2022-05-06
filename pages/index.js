@@ -20,6 +20,7 @@ import abiMfers from '../src/contract/abiMfers.json'
 import {ErrorContext} from "../src/containers/ErrorContext";
 import {Alert} from "@mui/lab";
 import { LoadingButton } from '@mui/lab';
+import {trimAddress} from "../src/helpers/common";
 
 const StyledSelect = styled(Select)(({ theme }) => ({
   // marginTop: theme.spacing(16),
@@ -107,6 +108,7 @@ const HomePage = () => {
   const [shouldFetchInfo, setShouldFetchInfo] = React.useState(true)
   const [shouldFetchMetamask, setShouldFetchMetamask] = React.useState(true)
   const [isLoading, setIsLoading] = React.useState(true)
+  const [successMessage, setSuccessMessage] = React.useState(null)
 
 
   const handleConnectMetamask = async () => {
@@ -159,6 +161,7 @@ const HomePage = () => {
         contract: mfersContract
       })
 
+      setSuccessMessage('Your transaction was succesfull!')
       setIsLoading(false)
     } catch(errors) {
       setError(errors)
@@ -185,8 +188,6 @@ const HomePage = () => {
         const init = async () => {
           const contractSaleState = await getSaleState({ contract })
           
-          console.log('[INFO] - contractSaleState', contractSaleState)
-
           setIsSaleActive(contractSaleState)
           setShouldFetchInfo(false)
           setIsLoading(false)
@@ -202,6 +203,10 @@ const HomePage = () => {
       <StyledContainer>
         {!!error.message && (
           <StyledAlert severity="error" onClose={() => setError({})}>{error.message}</StyledAlert>
+        )}
+
+        {!!successMessage && (
+          <StyledAlert severity="success" onClose={() => setSuccessMessage(null)}>{successMessage}</StyledAlert>
         )}
 
         <Grid
@@ -262,6 +267,12 @@ const HomePage = () => {
             >
               {isMetamaskInstalled && isMetamaskConnected && (
                 <>
+                  <Grid item xs={12}>
+                    <Typography>
+                      Your account: {trimAddress(connectedAccount)}
+                    </Typography>
+                  </Grid>
+
                   <Grid item xs={12}>
                     <div>
                       <FormControl fullWidth sx={{ marginTop: { xs: 12, md: 0 }}}>
