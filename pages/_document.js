@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <meta property="twitter:card" content="summary_large_image"/>
           <meta property="twitter:url" content="https://cheekymfers.com/"/>
           <meta property="twitter:title" content="Cheeky Mfers"/>
-          <meta property="twitter:description" content="A cc0 derivative collection of 10k cheeky mfers inspired by the original artwork from Sartoshi"/>"/>
+          <meta property="twitter:description" content="A cc0 derivative collection of 10k cheeky mfers inspired by the original artwork from Sartoshi"/>
           <meta property="twitter:image" content="https://cheekymfers.com"/>
         </Head>
         <body style={{
