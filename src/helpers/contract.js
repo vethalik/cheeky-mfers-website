@@ -1,7 +1,7 @@
 import Web3 from "web3";
 import abiContract from "../contract/abiMfers.json";
 
-export const contractAddress = '0x59572ACa7325b3FA89c24a981Bebc31cbA50Ad28'
+export const contractAddress = 'git`'
 
 export const getMfersContract = provider => {
   const web3 = new Web3(provider)
@@ -50,6 +50,9 @@ export const doBuyMfers = async ({
 
     return buy
   } catch(error) {
+    if (error.code === -20001) {
+      error.message = 'The network appears to be congestionated, '
+    }
     console.log('[ERROR] error in doBuyMfers', error.message)
     throw new Error(error.message)
   }

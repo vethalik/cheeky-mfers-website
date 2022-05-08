@@ -165,6 +165,7 @@ const HomePage = () => {
       setIsLoading(false)
     } catch(errors) {
       setError(errors)
+      setIsLoading(false)
     }
   }
 
@@ -379,7 +380,12 @@ const HomePage = () => {
           </Grid>
           <Grid item>
             <StyledTypography variant="body1">
-              Cheeky Mfers is a 10k generative art project built by Vethalik and 512, inspired by Sartoshi and in the public domain (cc0). Feel free to use these mfers the way you want.
+              A collection based off the original work of satoshi’s mfers.
+              Born from a collaboration between the experience blockchain developer “V” and the digital artist “512” Cheeky mfers are trendy, happy, friendly mfers with new traits, colourful features and a great visual style.
+            </StyledTypography>
+
+            <StyledTypography variant="body1">
+              Full story coming soon!
             </StyledTypography>
           </Grid>
         </Grid>
