@@ -380,8 +380,7 @@ const HomePage = () => {
           </Grid>
           <Grid item>
             <StyledTypography variant="body1">
-              A collection based off the original work of satoshi’s mfers.
-              Born from a collaboration between the experience blockchain developer “V” and the digital artist “512” Cheeky mfers are trendy, happy, friendly mfers with new traits, colourful features and a great visual style.
+              We simply love mfers and decided to work on our interpretation. Cheeky mfers are happy, friendly mfers with new traits, accessories, colourful features and a striking visual style.
             </StyledTypography>
 
             <StyledTypography variant="body1">
