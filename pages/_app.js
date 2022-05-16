@@ -1,4 +1,4 @@
-import './styles.css'
+import '../public/styles/styles.css'
 
 import React from 'react';
 import AuthContextProvider from "../src/containers/AuthContext";

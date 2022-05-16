@@ -22,12 +22,6 @@ import {Alert} from "@mui/lab";
 import { LoadingButton } from '@mui/lab';
 import {trimAddress} from "../src/helpers/common";
 
-const StyledSelect = styled(Select)(({ theme }) => ({
-  // marginTop: theme.spacing(16),
-  marginBottom: theme.spacing(2),
-  color: 'white'
-}))
-
 const StyledAlert = styled(Alert)(({ theme }) => ({
   marginTop: theme.spacing(2),
   marginBottom: theme.spacing(4)
@@ -302,9 +296,10 @@ const HomePage = () => {
                       variant="outlined"
                       disabled={!isSaleActive}
                       loading={isLoading}
-                      onClick={handleMint}
+                      // onClick={handleMint}
                     >
-                      {isSaleActive ? 'Buy now' : 'Coming Soon'}
+                      {/*{isSaleActive ? 'Buy now' : 'Coming Soon'}*/}
+                      Coming Soon
                     </LoadingButton>
                   </Grid>
 
@@ -380,8 +375,7 @@ const HomePage = () => {
           </Grid>
           <Grid item>
             <StyledTypography variant="body1">
-              A collection based off the original work of satoshi’s mfers.
-              Born from a collaboration between the experience blockchain developer “V” and the digital artist “512” Cheeky mfers are trendy, happy, friendly mfers with new traits, colourful features and a great visual style.
+              We simply love mfers and decided to work on our interpretation. Cheeky mfers are happy, friendly mfers with new traits, accessories, colourful features and a striking visual style.
             </StyledTypography>
 
             <StyledTypography variant="body1">

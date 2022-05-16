@@ -1,7 +1,7 @@
 import Web3 from "web3";
 import abiContract from "../contract/abiMfers.json";
 
-export const contractAddress = 'git`'
+export const contractAddress = '0xe35a4D2806E888fed21e649B4FD00Ecb12bBD252'
 
 export const getMfersContract = provider => {
   const web3 = new Web3(provider)
