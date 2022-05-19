@@ -358,10 +358,31 @@ const HomePage = () => {
           <Grid item>
             <Grid container justifyContent="center" alignItems="center" spacing={6}>
               <Grid item>
-                <TeamMfer teamMember="vethalik" />
+                <Grid container justifyContent="center" direction="column" alignItems="center" spacing={6}>
+                  <Grid item>
+                    <TeamMfer teamMember="vethalik" />
+                  </Grid>
+                  <Grid item>
+                    <Link variant="body1" href="https://twitter.com/vethalik" target="_blank">
+                      @vethalik
+                    </Link>
+                  </Grid>
+                </Grid>
               </Grid>
               <Grid item>
-                <TeamMfer teamMember="512" />
+                <Grid container justifyContent="center" direction="column" alignItems="center" spacing={6}>
+                  <Grid item>
+                    <TeamMfer teamMember="512" />
+                  </Grid>
+                  <Grid item>
+                    <Link variant="body1" href="https://twitter.com/FivetwelveLab" target="_blank">
+                      @fivetwelvelab
+                    </Link>
+                  </Grid>
+                </Grid>
+                <Link variant="body1" href="#">
+
+                </Link>
               </Grid>
             </Grid>
           </Grid>
