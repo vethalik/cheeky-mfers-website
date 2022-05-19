@@ -310,14 +310,14 @@ const HomePage = () => {
                   </Grid>
 
                   <Grid item xs={12}>
-                    <Link href="https://etherscan.io/address/0xe35a4d2806e888fed21e649b4fd00ecb12bbd252#code">
+                    <Link variant="body1" href="https://etherscan.io/address/0xe35a4d2806e888fed21e649b4fd00ecb12bbd252#code">
                       contract link
                     </Link>
                   </Grid>
 
                   <Grid item xs={12}>
                     <Typography>
-                      Cheeky Mfers left: MINT STARTS 05/20/22
+                      MINT STARTS 05/20/22
                     </Typography>
                   </Grid>
                 </>
