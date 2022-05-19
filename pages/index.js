@@ -6,7 +6,7 @@ import {
   Container,
   Divider,
   FormControl,
-  Grid, InputLabel, MenuItem, Select,
+  Grid, InputLabel, Link, MenuItem, Select,
   styled
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
@@ -305,19 +305,19 @@ const HomePage = () => {
 
                   <Grid item xs={12}>
                     <Typography>
-                      Price TBD
+                      Price 0.05 ETH
                     </Typography>
                   </Grid>
 
                   <Grid item xs={12}>
-                    <Typography>
-                      contract link (Coming Soon)
-                    </Typography>
+                    <Link href="https://etherscan.io/address/0xe35a4d2806e888fed21e649b4fd00ecb12bbd252#code">
+                      contract link
+                    </Link>
                   </Grid>
 
                   <Grid item xs={12}>
                     <Typography>
-                      Cheeky Mfers left: MINT SOON
+                      Cheeky Mfers left: MINT STARTS 05/20/22
                     </Typography>
                   </Grid>
                 </>
