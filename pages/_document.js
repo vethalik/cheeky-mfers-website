@@ -19,14 +19,14 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://cheekymfers.com"/>
           <meta property="og:title" content="Cheeky Mfers"/>
           <meta property="og:description" content="Cheeky Mfers - Derivative collection inspired by Sartoshi's mfers"/>
-          <meta property="og:image" content="https://cheekymfers.com/images/design/cover-metadata.jpg?423423=123"/>
+          <meta property="og:image" content="https://cheekymfers.com/images/design/mfers-banner.jpg?abc=123"/>
 
           {/* Twitter MetaTags */}
           <meta property="twitter:card" content="summary_large_image"/>
           <meta property="twitter:url" content="https://cheekymfers.com/"/>
           <meta property="twitter:title" content="Cheeky Mfers"/>
           <meta property="twitter:description" content="A cc0 derivative collection of 10k cheeky mfers inspired by the original artwork from Sartoshi"/>
-          <meta property="twitter:image" content="https://cheekymfers.com"/>
+          <meta property="twitter:image" content="https://cheekymfers.com/images/design/mfers-banner.jpg?abc=123"/>
         </Head>
         <body style={{
           margin: 0,
