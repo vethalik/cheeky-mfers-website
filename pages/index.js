@@ -296,7 +296,7 @@ const HomePage = () => {
                       variant="outlined"
                       disabled={!isSaleActive}
                       loading={isLoading}
-                      // onClick={handleMint}
+                      onClick={handleMint}
                     >
                       {isSaleActive ? 'Buy now' : 'Coming Soon'}
                       {/*Coming Soon*/}
