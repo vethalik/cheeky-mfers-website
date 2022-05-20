@@ -322,7 +322,7 @@ const HomePage = () => {
 
                   <Grid item xs={12}>
                     <Typography>
-                      MINT STARTS 05/20/22
+                      MINT OPEN!
                     </Typography>
                   </Grid>
                 </>
@@ -385,9 +385,6 @@ const HomePage = () => {
                     </Link>
                   </Grid>
                 </Grid>
-                <Link variant="body1" href="#">
-
-                </Link>
               </Grid>
             </Grid>
           </Grid>
