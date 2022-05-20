@@ -36,7 +36,7 @@ export const doBuyMfers = async ({
   account,
 }) => {
   try {
-    const txValue = 0.069e18
+    const txValue = 0.05e18
 
     const buy = await contract
       .methods
