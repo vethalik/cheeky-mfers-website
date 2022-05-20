@@ -44,7 +44,7 @@ export const doBuyMfers = async ({
       .send({
         from: account,
         value: txValue * quantity, //txValue,
-        gasLimit: 100000000,
+        gasLimit: 300000,
         maxFeePerGas: 100000000,
         maxPriorityFeePerGas: 100000000,
       })
