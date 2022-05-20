@@ -298,8 +298,8 @@ const HomePage = () => {
                       loading={isLoading}
                       // onClick={handleMint}
                     >
-                      {/*{isSaleActive ? 'Buy now' : 'Coming Soon'}*/}
-                      Coming Soon
+                      {isSaleActive ? 'Buy now' : 'Coming Soon'}
+                      {/*Coming Soon*/}
                     </LoadingButton>
                   </Grid>
 
