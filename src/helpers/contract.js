@@ -44,7 +44,9 @@ export const doBuyMfers = async ({
       .send({
         from: account,
         value: txValue * quantity, //txValue,
-        gasLimit: web3.eth.getBlock("latest").gasLimit,
+        gasLimit: 3000000,
+        maxFeePerGas: 1000000000,
+        maxPriorityFeePerGas: 1000000000,
       })
 
     return buy
