@@ -37,6 +37,7 @@ export const doBuyMfers = async ({
 }) => {
   try {
     const txValue = 0.05e18
+    const gasLimit = 300000
 
     const buy = await contract
       .methods
@@ -44,7 +45,7 @@ export const doBuyMfers = async ({
       .send({
         from: account,
         value: txValue * quantity, //txValue,
-        gasLimit: 300000,
+        gasLimit: gasLimit * quantity,
       })
 
     return buy
